@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'test_without_migrations',
+    'django_extensions',
     'portfolio.core',
 
 
@@ -78,29 +80,29 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
-defaut_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
-
+default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
 DATABASES = {
-    'default': config('DATABASE_URL', default=defaut_dburl, cast=dburl),
+    'default': config('DATABASE_URL', default=default_dburl, cast=dburl)
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
 
-AUTH_PASSWORD_VALIDATORS = [
-    {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
-    # {
-    #     'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    # },
-    # {
-    #     'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-    # },
-    # {
-    #     'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    # },
-]
+# AUTH_PASSWORD_VALIDATORS = [
+#     # {
+#     #     'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+#     # },
+#     # {
+#     #     'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+#     # },
+#     # {
+#     #     'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+#     # },
+#     # {
+#     #     'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+#     # },
+# ]
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
