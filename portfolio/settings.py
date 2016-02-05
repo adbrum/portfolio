@@ -18,7 +18,7 @@ from dj_database_url import parse as dburl
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
+# See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
@@ -107,7 +107,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
-LANGUAGE_CODE = 'pt-pt'
+LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'UTC'
 
