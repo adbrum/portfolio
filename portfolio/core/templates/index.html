@@ -161,7 +161,9 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label for="{{ form.name.id_for_label }}">{{ form.name.label }}</label>
-                                {{ form.name.errors }}
+                                {% if form.name.errors %}
+                                    <div class="alert alert-danger" role="alert">{{ form.name.errors }}</div>
+                                {% endif %}
                                 {{ form.name }}
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -169,7 +171,9 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label for="{{ form.email.id_for_label }}">{{ form.email.label }}</label>
-                                {{ form.email.errors }}
+                                {% if form.email.errors %}
+                                    <div class="alert alert-danger" role="alert">{{ form.email.errors }}</div>
+                                {% endif %}
                                 {{ form.email }}
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -177,7 +181,9 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label for="{{ form.phone.id_for_label }}">{{ form.phone.label }}</label>
-                                {{ form.phone.errors }}
+                                {% if form.phone.errors %}
+                                    <div class="alert alert-danger" role="alert">{{ form.phone.errors }}</div>
+                                {% endif %}
                                 {{ form.phone }}
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -185,7 +191,9 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label for="{{ form.message.id_for_label }}">{{ form.message.label }}</label>
-                                {{ form.message.errors }}
+                                {% if form.message.errors %}
+                                    <div class="alert alert-danger" role="alert">{{ form.message.errors }}</div>
+                                {% endif %}
                                 {{ form.message }}
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -253,7 +261,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Adriano Regis 2016 - Textos em PT-pt
+                        Copyright &copy; Adriano Regis 2016
                     </div>
                 </div>
             </div>
@@ -331,6 +339,7 @@
                                      alt="">
                             </a>
 
+                            <h6>*Textos e Projeto no idioma Pt-pt</h6>
                             <p>O <a href="http://swms.herokuapp.com">SWMS</a> é uma base de monitorização remota
                                 de equipamentos
                                 com sistemas embebidos, foi projetado para aumentar a eficiência na execução de ações em
@@ -401,6 +410,7 @@
                                            allowScriptAccess="always" width="640" height="390">
                                 </object>
                             </p>
+                            <h6>*Textos e Projeto no idioma Pt-pt</h6>
                             <p>
                                 Sistema desenvolvido por mim, em contexto de estágio profissional na empresa
                                 <a href="https://www.facebook.com/exclusivkey/">Exclusivkey Portugal</a>.
