@@ -340,6 +340,7 @@
                             </a>
 
                             <h6>*Textos e Projeto no idioma Pt-pt</h6>
+
                             <p>O <a href="http://swms.herokuapp.com">SWMS</a> é uma base de monitorização remota
                                 de equipamentos
                                 com sistemas embebidos, foi projetado para aumentar a eficiência na execução de ações em
@@ -401,16 +402,20 @@
                             {#                                 alt="">#}
 
                             <p>
-                                <object style="height: 390px; width: 640px">
-                                    <param name="https://www.youtube.com/v/jaRZWggD4yk">
-                                    <param name="allowFullScreen" value="true">
-                                    <param name="allowScriptAccess" value="always">
-                                    <embed src="https://www.youtube.com/v/jaRZWggD4yk"
-                                           type="application/x-shockwave-flash" allowfullscreen="true"
-                                           allowScriptAccess="always" width="640" height="390">
-                                </object>
+
+                            <div class="video-container">
+                                {#                                <object style="height: 390px; width: 640px">#}
+                                <param name="https://www.youtube.com/v/jaRZWggD4yk">
+                                <param name="allowFullScreen" value="true">
+                                <param name="allowScriptAccess" value="always">
+                                <embed src="https://www.youtube.com/v/jaRZWggD4yk"
+                                       type="application/x-shockwave-flash" allowfullscreen="true"
+                                       allowScriptAccess="always" width="640" height="390">
+                                    {#                                </object>#}
+                            </div>
                             </p>
                             <h6>*Textos e Projeto no idioma Pt-pt</h6>
+
                             <p>
                                 Sistema desenvolvido por mim, em contexto de estágio profissional na empresa
                                 <a href="https://www.facebook.com/exclusivkey/">Exclusivkey Portugal</a>.
@@ -583,7 +588,7 @@
 
     <!-- Contact Form JavaScript -->
     <script src="{% static 'js/jqBootstrapValidation.js' %}"></script>
-{#    <script src="{% static 'js/contact_me.js' %}"></script>#}
+    {#    <script src="{% static 'js/contact_me.js' %}"></script>#}
 
     <!-- Custom Theme JavaScript -->
     <script src="{% static 'js/freelancer.js' %}"></script>
