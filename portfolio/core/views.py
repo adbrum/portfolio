@@ -4,6 +4,7 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
 from django.template.loader import render_to_string
 from portfolio.core.form import EmailForm
+from portfolio.core.models import Email
 
 
 def home(request):
@@ -16,6 +17,7 @@ def home(request):
                            body,
                            'adbrumvidal@gmail.com',
                            ['adbrumvidal@gmail.com', form.cleaned_data['email']])
+            email = Email.objects.create(**form.cleaned_data)
 
             messages.success(request, 'Solicitação enviada com sucesso!')
 
